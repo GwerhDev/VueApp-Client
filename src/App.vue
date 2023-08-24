@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import LandingPage from '../pages/LandingPage.vue';
 
 </script>
 
-<template>
-  <LandingPage/>
-</template>
+<template><router-view/></template>
 
 <style scoped>
 .logo {

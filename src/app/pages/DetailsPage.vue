@@ -1,13 +1,10 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
-  <button>Entrar</button>
+  <h1>Detalles</h1>
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
-}
+
 </style>
