@@ -1,11 +1,10 @@
 <script setup lang="ts">
-
-defineProps<{ msg: string }>()
-
+import EnterButton from '../components/Buttons/EnterButton.vue'
 </script>
 
 <template>
   <h1>Prueba técnica</h1>
+  <EnterButton/>
 </template>
 
 <style scoped>
