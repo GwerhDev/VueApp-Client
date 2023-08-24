@@ -23,6 +23,7 @@
 <style scoped>
 .nav-container {
   width: 100vw;
+  position: fixed;
 }
 .nav-menu {
   padding-left: 90px;
@@ -56,7 +57,7 @@ input {
 }
 
 .search-button:hover {
-  background-color: black;
+  background-color: var(--primary-hover-color);
 }
 
 </style>
