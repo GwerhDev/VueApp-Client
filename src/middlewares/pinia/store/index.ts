@@ -36,9 +36,12 @@ export const useStore = defineStore('store', {
     async loadItemById(id: string) {
       this.details = await loadItemById(id)
     },
-    async setPage(page: number) {
+    setPage(page: number) {
       this.pagination.min = (page - 1) * ITEMS_PER_PAGE;
       this.pagination.max = page * ITEMS_PER_PAGE;
+    },
+    clearDetails() {
+      this.details = [];
     }
   }
 })

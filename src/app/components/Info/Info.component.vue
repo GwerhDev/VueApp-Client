@@ -2,18 +2,29 @@
 <script setup lang="ts">
   import { useRouter } from 'vue-router';
   import { useStore } from '../../../middlewares/pinia/store';
-  
+  import { storeToRefs } from 'pinia';
+
   const store: any = useStore();
   const router: any = useRouter();
+  const { details }: any = storeToRefs( store )
 
   const { id } = router.currentRoute._value.params;
-  store.loadItemById(id)
-  console.log(id)
-
+  store.loadItemById(id);
 </script>
 
 <template>
   <main class="main-container">
-    <h1>Detalles</h1>
+    <div class="mb-4" v-if="details">
+      <h1>{{ details.title }}</h1>
+      <div>
+        <h2>Detalles</h2>
+        <span>
+          {{ details.body }}
+        </span>
+      </div>
+    </div>
+    <div class="mb-4" v-else>
+      <h2>Cargando</h2>
+    </div>
   </main>
 </template>
