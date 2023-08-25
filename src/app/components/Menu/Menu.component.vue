@@ -16,22 +16,22 @@
 
 <template>
   <li class="mr-2">
-    <router-link @click="home()" to='/home'>
+    <router-link class="menu-letters" @click="home()" to='/home'>
       Inicio
     </router-link>
   </li>
   <li class="mr-2">
-    <a @click="closeMenu()" href='https://gwerhdev.github.io/VueApp-Client/' target="_blank">
+    <a class="menu-letters" @click="closeMenu()" href='https://gwerhdev.github.io/VueApp-Client/' target="_blank">
       Documentación
     </a>
   </li>
   <li class="mr-2">
-    <a @click="closeMenu()" href='https://github.com/GwerhDev/VueApp-Client' target="_blank">
+    <a class="menu-letters" @click="closeMenu()" href='https://github.com/GwerhDev/VueApp-Client' target="_blank">
       Repositorio
     </a>
   </li>
   <li class="mr-2">
-    <router-link @click="closeMenu()" to='/about'>
+    <router-link class="menu-letters" @click="closeMenu()" to='/about'>
       About
     </router-link>
   </li>

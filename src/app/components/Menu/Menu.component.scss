@@ -4,3 +4,11 @@
     margin-top: 1rem;
   }
 }
+
+.menu-letters {
+  color: white;
+  transition-duration: .4s;
+  &:hover {
+    color: var(--primary-hover-color);
+  }
+}
