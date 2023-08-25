@@ -36,3 +36,9 @@ input {
 .search-button:hover {
   background-color: var(--primary-hover-color);
 }
+
+.menu-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
