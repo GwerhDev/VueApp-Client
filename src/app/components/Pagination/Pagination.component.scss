@@ -1,0 +1,25 @@
+.pagination-container {
+  background-color: #171717b7;
+  backdrop-filter: blur(10px);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-buttons {
+  padding: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+button {
+  border-color: var(--primary-color);
+  margin: .2rem;
+  &:hover {
+    border-color: var(--primary-hover-color);
+    background-color: var(--primary-hover-color);
+  }
+}

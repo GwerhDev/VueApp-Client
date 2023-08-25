@@ -4,6 +4,8 @@
   import Card from '../Card/Card.component.vue'
 
   const store: any = useStore();
+  const min: number = 0;
+  const max: number = 10;
 
   store.getAllItems();
 </script>
@@ -11,7 +13,7 @@
 <template>
   <main class="main-container">
     <ul class="grid-container">
-      <li v-for="item in store.items" :key="item.id" class="grid-item">
+      <li v-for="item in store.items.slice(min, max)" :key="item.id" class="grid-item">
         <Card :item="item"/>
       </li>
     </ul>  

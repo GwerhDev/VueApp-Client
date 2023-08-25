@@ -19,6 +19,6 @@
 <template>
   <div class="card-container">
     <span>{{ props.item.title }}</span>
-    <button @click="redirectToDetails">ver más detalles</button>
+    <button @click="redirectToDetails">Ver más detalles</button>
   </div>
 </template>
