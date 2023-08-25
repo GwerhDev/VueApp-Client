@@ -2,7 +2,7 @@
 <script setup lang="ts">
   import { useStore } from '../../../middlewares/pinia/store';
   import { useRouter } from 'vue-router';
-  import { $d } from '../../../utils/cssSelector';
+  import { openMenu, closeMenu } from '../../../helpers/menu'
 
   const router: any = useRouter();
   const store: any = useStore();
@@ -15,20 +15,6 @@
   function search(e: string) {
     store.filterItemsByTitle(e)
     router.push(`/home`);
-  }
-
-  function openMenu() {
-    $d(".close-menu-container").style.display="flex";
-    $d(".menu-container").style.display="flex";
-    $d(".nav-menu-ul").style.height="100vh";
-    $d(".burger-menu-container").style.display="none";
-  }
-
-  function closeMenu() {
-    $d(".menu-container").style.display="none";
-    $d(".nav-menu-ul").style.height="2.5rem";
-    $d(".burger-menu-container").style.display="flex";
-    $d(".close-menu-container").style.display="none";
   }
 
 </script>
@@ -50,9 +36,9 @@
             </router-link>
           </li>
           <li class="mr-2">
-            <router-link class="router-link" to='/documentation'>
+            <a class="router-link" href='https://gwerhdev.github.io/VueApp-Client/' target="_blank">
               Documentación
-            </router-link>
+            </a>
           </li>
           <li class="mr-2">
             <a class="router-link" href='https://github.com/GwerhDev/VueApp-Client' target="_blank">

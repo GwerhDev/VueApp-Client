@@ -22,6 +22,7 @@
   padding: 0;
   padding-left: 45px;
   padding-right: 45px;
+  overflow: visible;
 }
 
 input {
@@ -39,6 +40,7 @@ input {
 
 .menu-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -51,6 +53,7 @@ input {
   align-items: center;
   img {
     cursor: pointer;
+    display: none;
   }
 }
 
@@ -60,7 +63,6 @@ input {
     cursor: pointer;
   }
 }
-
 
 @media (max-width: 1080px) {
   .menu-container {
@@ -90,6 +92,9 @@ input {
   
   .burger-menu-container {
     display: flex;
+    img {
+      display: block;
+    }
   }
 
   .nav-container {
