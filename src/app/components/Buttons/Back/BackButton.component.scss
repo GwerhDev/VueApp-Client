@@ -5,13 +5,15 @@
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background: linear-gradient(168deg, rgb(72, 72, 72) 20%, var(--primary-color) 120%);
   cursor: pointer;
   transition: border-color 0.25s;
+  color: white;
 }
 
 .router-link:hover {
   border-color: var(--primary-color);
+  background: linear-gradient(168deg, rgb(17, 17, 17) 20%, var(--primary-hover-color) 120%);
 }
 .router-link:focus,
 .router-link:focus-visible {
