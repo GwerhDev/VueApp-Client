@@ -1,4 +1,4 @@
-import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router';
+import { RouteRecordRaw, createRouter, createWebHistory, createWebHashHistory } from 'vue-router';
 import HomePage from '../pages/HomePage.vue';
 import AboutPage from '../pages/AboutPage.vue';
 import LandingPage from '../pages/LandingPage.vue';
@@ -34,7 +34,7 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 });
 
