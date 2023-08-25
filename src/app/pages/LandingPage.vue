@@ -7,7 +7,7 @@ import EnterButton from '../components/Buttons/Enter/EnterButton.component.vue'
     <h1>VueApp - FrontEnd</h1>
     <div class="mb-4">
       <span>Tecnologías: </span>
-      <i>Pinia, Axios</i>
+      <i>Pinia, Axios & TypeScript</i>
     </div>
     <EnterButton/>
   </main>
