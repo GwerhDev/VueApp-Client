@@ -158,6 +158,24 @@ ul {
   list-style: none; 
 }
 
+.d-flex {
+  display: flex;
+} 
+.just-cent {
+  justify-content: center;
+} 
+.align-cent {
+  align-items: center;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -30,6 +30,11 @@
   <div class="nav-container-desk">
     <main class="nav-menu-desk">
       <ul class="nav-menu-ul-desk">
+        <div class="d-flex just-cent align-cent">
+          <router-link class="d-flex just-cent align-cent" to='/'>
+            <img class="logo" src="../../../assets/svg/logoipsum.svg" alt="">
+          </router-link>
+        </div>
         <div class="menu-container-desk">
           <Menu/>
         </div>
