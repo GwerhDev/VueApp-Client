@@ -4,8 +4,12 @@ import EnterButton from '../components/Buttons/Enter/EnterButton.component.vue'
 
 <template>
   <main class="main-container">
-    <h1>Prueba técnica</h1>
-      <EnterButton/>
+    <h1>VueApp - FrontEnd</h1>
+    <div class="mb-4">
+      <span>Tecnologías: </span>
+      <i>Pinia, Axios</i>
+    </div>
+    <EnterButton/>
   </main>
 </template>
 
