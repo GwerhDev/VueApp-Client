@@ -7,9 +7,7 @@
   const store: any = useStore();
   const { filteredItems, pagination }: any = storeToRefs( store );
 
-  store.clearDetails();
-  store.loadAllItems();
-  
+  store.clearDetails();  
 </script>
 
 <template>
