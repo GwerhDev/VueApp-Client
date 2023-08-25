@@ -37,6 +37,9 @@ export const useStore = defineStore('store', {
       this.items = await loadAllItemsService();
       this.filteredItems = this.items;
       this.pagination.totalPages = Math.ceil(this.filteredItems.length / ITEMS_PER_PAGE);
+      this.pagination.min = MIN;
+      this.pagination.max = MAX;
+      this.pagination.currentPage = 1;
     },
     async loadItemById(id: string) {
       this.details = await loadItemByIdService(id)

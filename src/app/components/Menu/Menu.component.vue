@@ -12,6 +12,11 @@
     upToTop();
   }
 
+  function about() {
+    closeMenu();
+    upToTop();
+  }
+
 </script>
 
 <template>
@@ -31,7 +36,7 @@
     </a>
   </li>
   <li class="mr-2">
-    <router-link class="menu-letters" @click="closeMenu()" to='/about'>
+    <router-link class="menu-letters" @click="about()" to='/about'>
       About
     </router-link>
   </li>
