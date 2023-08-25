@@ -2,8 +2,8 @@
 <script setup lang="ts">
   import { useStore } from '../../../middlewares/pinia/store';
   import { useRouter } from 'vue-router';
-  import { openMenu, closeMenu } from '../../../helpers/menu';
   import Menu from '../Menu/Menu.component.vue';
+  import BurgerMenu from '../BurgerMenu/BurgerMenu.component.vue'
 
   const router: any = useRouter();
   const store: any = useStore();
@@ -21,23 +21,18 @@
 </script>
 
 <template>
-  <div class="nav-container">
-    <main class="nav-menu">
-      <ul class="nav-menu-ul">
-        <div class="burger-menu-container">
-          <img src="../../../assets/svg/icon-burger-menu.svg" @click="openMenu()" alt="">
-        </div>
-        <div class="close-menu-container">
-          <span @click="closeMenu()">X</span>
-        </div>
-        <div class="menu-container">
+  <div class="nav-container-desk">
+    <main class="nav-menu-desk">
+      <ul class="nav-menu-ul-desk">
+        <div class="menu-container-desk">
           <Menu/>
         </div>
-        <div class="searcher-container">
+        <div class="searcher-container-desk">
           <input type="text" @input="(e) => handleInput(e)">
-          <button class="search-button" @click="search(inputValue)">Buscar</button>
+          <button class="search-button-desk" @click="search(inputValue)">Buscar</button>
         </div>
       </ul>
     </main>
   </div>
+  <BurgerMenu/>
 </template>
