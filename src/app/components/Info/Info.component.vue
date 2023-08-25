@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="mb-4" v-else>
-      <h2>Cargando</h2>
+      <h2>Cargando...</h2>
     </div>
   </main>
 </template>

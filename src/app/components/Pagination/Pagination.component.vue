@@ -13,7 +13,7 @@
 
 <template>
   <div class="pagination-container">
-    <ul class="pagination-buttons">
+    <ul class="pagination-buttons" v-if="pagination.totalPages !==0">
       <button v-for="page in pagination.totalPages" :key="page" @click="setPage(page)">{{ page }}</button>
     </ul>
   </div>

@@ -79,6 +79,9 @@
 .mt-5 {
   margin-top: 5rem;
 }
+.mt-100 {
+  margin-top: 10rem;
+}
 
 a {
   font-weight: 500;
