@@ -18,7 +18,7 @@
 
 <template>
   <div class="card-container">
-    <img src="../../../assets/svg/logoipsum.svg" class="mt-2 mb-2" alt="">
+    <img src="../../../assets/svg/logoipsum.svg" class="mt-2 mb-2" alt="iamge-placeholder">
     <span>{{ props.item.title }}</span>
     <button @click="redirectToDetails">Ver más detalles</button>
   </div>
