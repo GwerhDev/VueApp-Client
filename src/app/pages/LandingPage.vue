@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import EnterButton from '../components/Buttons/EnterButton.component.vue'
+import EnterButton from '../components/Buttons/Enter/EnterButton.component.vue'
 </script>
 
 <template>
