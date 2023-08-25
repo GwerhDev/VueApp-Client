@@ -1,23 +1,44 @@
-import axios from 'axios';
 import {defineStore} from 'pinia';
-import { API_URL } from '../../misc/const';
+import { loadAllItems, loadItemById } from '../actions';
+import { ITEMS_PER_PAGE, MAX, MIN } from '../../misc/const';
+
+interface storeState {
+  items: any[],
+  details: any[],
+  pagination: {
+    min: Number,
+    max: Number,
+    totalPages: Number
+  }
+}
 
 export const useStore = defineStore('store', {
-  state: () => ({
+  state: (): storeState => ({
     items: [],
-    details: []
+    details: [],
+    pagination: {
+      min: MIN,
+      max: MAX,
+      totalPages: 0
+    }
   }),
 
+  getters: {
+    getAllItems: (state) => state.items,
+    getItemById: (state) => state.details
+  },
+
   actions: {
-    async getAllItems() {
-      this.items = await axios.get(API_URL)
-                   .then(response => response.data)
-                   .catch(error => console.error(error))
+    async loadAllItems() {
+      this.items = await loadAllItems();
+      this.pagination.totalPages = this.items.length/ITEMS_PER_PAGE;
     },
-    async getItemsById(id: string) {
-      this.details = await axios.get(API_URL+id)
-                   .then(response => response.data)
-                   .catch(error => console.error(error))
+    async loadItemById(id: string) {
+      this.details = await loadItemById(id)
+    },
+    async setPage(page: number) {
+      this.pagination.min = (page - 1) * ITEMS_PER_PAGE;
+      this.pagination.max = page * ITEMS_PER_PAGE;
     }
   }
 })
