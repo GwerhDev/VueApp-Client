@@ -1,5 +1,21 @@
 <style scoped lang="scss" src="./NavBar.component.scss"/>
 <script setup lang="ts">
+  import { useStore } from '../../../middlewares/pinia/store';
+  import { useRouter } from 'vue-router';
+
+  const router = useRouter();
+  const store: any = useStore();
+  var inputValue: string;
+
+
+  function handleInput(e: any) {
+    inputValue = e.target.value
+  }
+
+  function search(e: string) {
+    store.filterItemsByTitle(e)
+    router.push(`/home`);
+  }
 
 </script>
 
@@ -30,8 +46,8 @@
           </li>
         </div>
         <li>
-          <input type="text">
-          <button class="search-button">Buscar</button>
+          <input type="text" @input="(e) => handleInput(e)">
+          <button class="search-button" @click="search(inputValue)">Buscar</button>
         </li>
       </ul>
     </main>

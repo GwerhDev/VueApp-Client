@@ -5,7 +5,7 @@
   import Card from '../Card/Card.component.vue'
 
   const store: any = useStore();
-  const { items, pagination }: any = storeToRefs( store )
+  const { filteredItems, pagination }: any = storeToRefs( store );
 
   store.clearDetails();
   store.loadAllItems();
@@ -14,8 +14,8 @@
 
 <template>
   <main class="main-container">
-    <ul class="grid-container" v-if="items">
-      <li v-for="item in items.slice(pagination.min, pagination.max)" :key="item.id" class="grid-item">
+    <ul class="grid-container" v-if="filteredItems">
+      <li v-for="item in filteredItems.slice(pagination.min, pagination.max)" :key="item.id" class="grid-item">
         <Card :item="item"/>
       </li>
     </ul>
