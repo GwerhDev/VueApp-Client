@@ -4,6 +4,7 @@
   import { useRouter } from 'vue-router';
   import { openMenu, closeMenu } from '../../../helpers/menu';
   import Menu from '../Menu/Menu.component.vue';
+import { upToTop } from '../../../utils/upToTop';
 
   const router: any = useRouter();
   const store: any = useStore();
@@ -16,6 +17,8 @@
   function search(e: string) {
     store.filterItemsByTitle(e)
     router.push(`/home`);
+    upToTop();
+    closeMenu();
   }
 
 </script>
@@ -33,7 +36,7 @@
         <div class="menu-container">
           <Menu></Menu>
         </div>
-        <div class="searcher-container">
+        <div class="searcher-container mt-5">
           <input type="text" @input="(e) => handleInput(e)">
           <button class="search-button" @click="search(inputValue)">Buscar</button>
         </div>

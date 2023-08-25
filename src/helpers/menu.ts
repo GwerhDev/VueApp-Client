@@ -5,6 +5,7 @@ export function openMenu() {
   $d(".menu-container").style.display="flex";
   $d(".close-menu-container").style.display="flex";
   $d(".burger-menu-container").style.display="none";
+  $d(".searcher-container").style.display="block";
 }
 
 export function closeMenu() {
@@ -12,4 +13,5 @@ export function closeMenu() {
   $d(".menu-container").style.display="none";
   $d(".close-menu-container").style.display="none";
   $d(".burger-menu-container").style.display="flex";
+  $d(".searcher-container").style.display="none";
 }

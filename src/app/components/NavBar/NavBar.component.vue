@@ -2,6 +2,10 @@
 <script setup lang="ts">
   import { useStore } from '../../../middlewares/pinia/store';
   import { useRouter } from 'vue-router';
+
+  import { upToTop } from '../../../utils/upToTop';
+  import { closeMenu } from '../../../helpers/menu';
+  
   import Menu from '../Menu/Menu.component.vue';
   import BurgerMenu from '../BurgerMenu/BurgerMenu.component.vue'
 
@@ -14,8 +18,10 @@
   }
 
   function search(e: string) {
-    store.filterItemsByTitle(e)
+    store.filterItemsByTitle(e);
     router.push(`/home`);
+    closeMenu();
+    upToTop();
   }
 
 </script>

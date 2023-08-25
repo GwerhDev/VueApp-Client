@@ -1,11 +1,22 @@
 <style scoped lang="scss" src="./Menu.component.scss"/>
 <script setup lang="ts">
+  import { useStore } from '../../../middlewares/pinia/store';
+  import { upToTop } from '../../../utils/upToTop';
   import { closeMenu } from '../../../helpers/menu';
+
+  const store = useStore();
+
+  function home() {
+    closeMenu();
+    store.loadAllItems();
+    upToTop();
+  }
+
 </script>
 
 <template>
   <li class="mr-2">
-    <router-link @click="closeMenu()" to='/home'>
+    <router-link @click="home()" to='/home'>
       Inicio
     </router-link>
   </li>
