@@ -2,7 +2,8 @@
 <script setup lang="ts">
   import { useStore } from '../../../middlewares/pinia/store';
   import { useRouter } from 'vue-router';
-  import { openMenu, closeMenu } from '../../../helpers/menu'
+  import { openMenu, closeMenu } from '../../../helpers/menu';
+  import Menu from '../Menu/Menu.component.vue';
 
   const router: any = useRouter();
   const store: any = useStore();
@@ -30,26 +31,7 @@
           <span @click="closeMenu()">X</span>
         </div>
         <div class="menu-container">
-          <li class="mr-2">
-            <router-link class="router-link" to='/home'>
-              Inicio
-            </router-link>
-          </li>
-          <li class="mr-2">
-            <a class="router-link" href='https://gwerhdev.github.io/VueApp-Client/' target="_blank">
-              Documentación
-            </a>
-          </li>
-          <li class="mr-2">
-            <a class="router-link" href='https://github.com/GwerhDev/VueApp-Client' target="_blank">
-              Repositorio
-            </a>
-          </li>
-          <li class="mr-2">
-            <router-link class="router-link" to='/about'>
-              About
-            </router-link>
-          </li>
+          <Menu/>
         </div>
         <div class="searcher-container">
           <input type="text" @input="(e) => handleInput(e)">
