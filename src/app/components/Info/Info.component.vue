@@ -13,7 +13,7 @@
 </script>
 
 <template>
-  <main class="main-container">
+  <main class="main-container-info">
     <div class="mb-4" v-if="details">
       <h1>{{ details.title }}</h1>
       <div>
