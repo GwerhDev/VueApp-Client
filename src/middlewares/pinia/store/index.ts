@@ -9,7 +9,8 @@ interface storeState {
   pagination: {
     min: Number,
     max: Number,
-    totalPages: Number
+    totalPages: Number,
+    currentPage: Number
   }
 }
 
@@ -21,7 +22,8 @@ export const useStore = defineStore('store', {
     pagination: {
       min: MIN,
       max: MAX,
-      totalPages: 0
+      totalPages: 0,
+      currentPage: 1
     }
   }),
 
@@ -42,6 +44,7 @@ export const useStore = defineStore('store', {
     setPage(page: number) {
       this.pagination.min = (page - 1) * ITEMS_PER_PAGE;
       this.pagination.max = page * ITEMS_PER_PAGE;
+      this.pagination.currentPage = page;
     },
     clearDetails() {
       this.details = [];
@@ -52,11 +55,13 @@ export const useStore = defineStore('store', {
         this.pagination.totalPages = Math.ceil(this.filteredItems.length / ITEMS_PER_PAGE);
         this.pagination.min = MIN;
         this.pagination.max = MAX;
+        this.pagination.currentPage = 1;
       } else {
         this.filteredItems = this.items.filter((item: any) => item.title.toLowerCase().includes(search.toLowerCase()));
         this.pagination.totalPages = Math.ceil(this.filteredItems.length / ITEMS_PER_PAGE);
         this.pagination.min = MIN;
         this.pagination.max = MAX;
+        this.pagination.currentPage = 1;
       }
     }
   }

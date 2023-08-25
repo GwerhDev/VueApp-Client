@@ -16,7 +16,7 @@ import { upToTop } from '../../../utils/upToTop';
 <template>
   <div class="pagination-container">
     <ul class="pagination-buttons" v-if="pagination.totalPages !==0">
-      <button class="pag-button" v-for="page in pagination.totalPages" :key="page" @click="setPage(page)">{{ page }}</button>
+      <button class="pag-button" v-bind:disabled="pagination.currentPage === page" v-for="page in pagination.totalPages" :key="page" @click="setPage(page)">{{ page }}</button>
     </ul>
   </div>
 </template>

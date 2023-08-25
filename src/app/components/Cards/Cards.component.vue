@@ -2,7 +2,7 @@
 <script setup lang="ts">
   import { storeToRefs } from 'pinia';
   import { useStore } from '../../../middlewares/pinia/store';
-  import Card from '../Card/Card.component.vue'
+  import Card from '../Card/Card.component.vue';
 
   const store: any = useStore();
   const { filteredItems, pagination }: any = storeToRefs( store );
