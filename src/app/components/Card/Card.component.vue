@@ -20,7 +20,7 @@ import { capitalizeFirstLetter } from '../../../utils/capitalizeFirstLetter';
 <template>
   <div class="card-container">
     <img src="../../../assets/svg/logoipsum.svg" height="80" class="mt-2 mb-2" alt="iamge-placeholder">
-    <span>{{ capitalizeFirstLetter(props.item.title) }}</span>
+    <h3>{{ capitalizeFirstLetter(props.item.title) }}</h3>
     <button @click="redirectToDetails">Ver más detalles</button>
   </div>
 </template>
