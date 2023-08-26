@@ -6,7 +6,7 @@ Plataforma desarrollada en [VueJs](https://vuejs.org/) v3.3.4. Permite la visual
 
 Existe un repositorio disponible en [git](https://github.com/GwerhDev/VueApp-Client/).
 
-Existe una versión [online](https://gwerhdev-vue-app.netlify.app/) en Heroku.
+Existe una versión [online](https://gwerhdev-vue-app.netlify.app/) en Netlify.
 
 ## Instalación
 
