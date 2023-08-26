@@ -1,6 +1,6 @@
 <style scoped lang="scss" src="./Menu.component.scss"/>
 <script setup lang="ts">
-  import { useStore } from '../../../middlewares/pinia/store';
+  import { useStore } from '../../../middlewares/store';
   import { upToTop } from '../../../utils/upToTop';
   import { closeMenu } from '../../../helpers/menu';
 
@@ -41,3 +41,4 @@
     </router-link>
   </li>
 </template>
+../../../middlewares/store

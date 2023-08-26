@@ -1,7 +1,7 @@
 <style scoped lang="scss" src="./Pagination.component.scss"/>
 <script setup lang="ts">
   import { storeToRefs } from 'pinia';
-  import { useStore } from '../../../middlewares/pinia/store';
+  import { useStore } from '../../../middlewares/store';
 import { upToTop } from '../../../utils/upToTop';
 
   const store: any = useStore();
@@ -20,3 +20,4 @@ import { upToTop } from '../../../utils/upToTop';
     </ul>
   </div>
 </template>
+../../../middlewares/store

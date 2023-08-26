@@ -1,6 +1,6 @@
 import {defineStore} from 'pinia';
 import { loadAllItemsService, loadItemByIdService } from '../services';
-import { ITEMS_PER_PAGE, MAX, MIN } from '../../misc/const';
+import { ITEMS_PER_PAGE, MAX, MIN } from '../misc/const';
 
 interface storeState {
   items: any,

@@ -1,5 +1,5 @@
 import axios from "axios"
-import { API_URL } from "../../misc/const"
+import { API_URL } from "../misc/const"
 
 export const loadAllItemsService: any = async () => {
   const response: any = await axios.get(API_URL)

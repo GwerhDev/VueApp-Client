@@ -1,6 +1,6 @@
 <style scoped lang="scss" src="./NavBar.component.scss"/>
 <script setup lang="ts">
-  import { useStore } from '../../../middlewares/pinia/store';
+  import { useStore } from '../../../middlewares/store';
   import { useRouter } from 'vue-router';
 
   import { upToTop } from '../../../utils/upToTop';
@@ -51,3 +51,4 @@
   </div>
   <BurgerMenu/>
 </template>
+../../../middlewares/store

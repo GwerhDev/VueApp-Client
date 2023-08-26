@@ -1,6 +1,6 @@
 <style scoped lang="scss" src="./BurgerMenu.component.scss"/>
 <script setup lang="ts">
-  import { useStore } from '../../../middlewares/pinia/store';
+  import { useStore } from '../../../middlewares/store';
   import { useRouter } from 'vue-router';
   import { openMenu, closeMenu } from '../../../helpers/menu';
   import Menu from '../Menu/Menu.component.vue';
@@ -55,3 +55,4 @@ import { upToTop } from '../../../utils/upToTop';
     </main>
   </div>
 </template>
+../../../middlewares/store

@@ -1,7 +1,7 @@
 <style scoped lang="scss" src="./FilterInfo.component.scss"/>
 <script setup lang="ts">
   import { storeToRefs } from 'pinia';
-  import { useStore } from '../../../middlewares/pinia/store';
+  import { useStore } from '../../../middlewares/store';
 
   const store: any = useStore();
   const { filterInfo, filteredItems }: any = storeToRefs( store );
@@ -14,3 +14,4 @@
     <span>Mostrando: {{ filterInfo }} ({{ filteredItems?.length }} resultados)</span>
   </section>
 </template>
+../../../middlewares/store
