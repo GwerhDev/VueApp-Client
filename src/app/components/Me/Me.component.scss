@@ -1,5 +1,6 @@
 .section-container {
   padding: 3rem;
+  margin: 2rem;
 }
 
 .section-me {
@@ -20,4 +21,10 @@
       box-shadow: 0px 0px 10px var(--primary-color);    
     }
   }
+}
+
+.section-test {
+  padding: 0;
+  padding-right: 2rem;
+  text-align: left;
 }

@@ -14,6 +14,12 @@
   justify-content: center;
 }
 
+.inner-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 1080px) {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);

@@ -5,6 +5,7 @@ import { ITEMS_PER_PAGE, MAX, MIN } from '../../misc/const';
 interface storeState {
   items: any,
   filteredItems: any,
+  filterInfo: string,
   details: any,
   pagination: {
     min: Number,
@@ -18,6 +19,7 @@ export const useStore = defineStore('store', {
   state: (): storeState => ({
     items: [],
     filteredItems: [],
+    filterInfo: '',
     details: [],
     pagination: {
       min: MIN,
@@ -40,6 +42,7 @@ export const useStore = defineStore('store', {
       this.pagination.min = MIN;
       this.pagination.max = MAX;
       this.pagination.currentPage = 1;
+      this.filterInfo = 'todos';
     },
     async loadItemById(id: string) {
       this.details = await loadItemByIdService(id)
