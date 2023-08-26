@@ -32,4 +32,3 @@
     </div>
   </main>
 </template>
-../../../middlewares/store
