@@ -29,19 +29,26 @@
   text-align: left;
 }
 
+.icon-container-link {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
 .ul-links {
   padding: 0;
   a {
-    img {
-      padding: 8px;
-      margin-top: 12px;
-    }
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     span {
       display: flex;
       align-items: center;
       text-align: left;
       width: 100%;
-      padding: 8px;
     }
   }
 }

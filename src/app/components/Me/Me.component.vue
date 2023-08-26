@@ -13,17 +13,29 @@
       <div class="mt-1 my-links-container">
         <span>Mis enlaces:</span>
         <ul class="d-flex fd-col ul-links">
-          <a class="d-flex align-cent button-style" href="http://gwerh.developers.terminalkiller.site" target="_blank">
-            <img class="mr-1 mb-1" width="30" src="../../../assets/png/web-icon.png" alt="portoflio">
-            <span>Portafolio</span>
+          <a class="d-flex button-style" href="http://gwerh.developers.terminalkiller.site" target="_blank">
+            <div class="icon-container-link">
+              <img height="30" width="30" src="../../../assets/png/web-icon.png" alt="portoflio">
+            </div>
+            <div>
+              <span>Portafolio</span>
+            </div>
           </a>
-          <a class="d-flex align-cent button-style" href="https://github.com/GwerhDev" target="_blank">
-            <img class="mr-1 mb-1" width="30" src="../../../assets/png/github-icon.png" alt="portoflio">
-            <span>GitHub</span>
+          <a class="d-flex button-style" href="https://github.com/GwerhDev" target="_blank">
+            <div class="icon-container-link">
+              <img height="30" width="30" src="../../../assets/png/github-icon.png" alt="portoflio">
+            </div>
+            <div>
+              <span>GitHub</span>
+            </div>
           </a>
-          <a class="d-flex align-cent button-style" href="https://www.linkedin.com/in/gwerhdev/" target="_blank">
-            <img class="mr-1 mb-1" width="30" src="../../../assets/png/linkedin-icon.png" alt="portoflio">
-            <span>LinkedIn</span>
+          <a class="d-flex button-style" href="https://www.linkedin.com/in/gwerhdev/" target="_blank">
+            <div class="icon-container-link">
+              <img height="30" width="30" src="../../../assets/png/linkedin-icon.png" alt="portoflio">
+            </div>
+            <div>
+              <span>LinkedIn</span>
+            </div>
           </a>
         </ul>
 

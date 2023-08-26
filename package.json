@@ -10,6 +10,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@vue/test-utils": "^2.4.1",
     "axios": "^1.4.0",
     "pinia": "^2.1.6",
     "vue": "^3.3.4",
