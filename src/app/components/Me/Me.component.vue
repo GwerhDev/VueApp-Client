@@ -8,6 +8,25 @@
         <img src="../../../assets/png/gwerhdev.png" width="150px" alt="profile picture">
         <h2>Gerardo Guarda</h2>
         <h3>Gwerh</h3>
+        <i>Desarrollador Web Front-End</i>
+      </div>
+      <div class="mt-1 my-links-container">
+        <span>Mis enlaces:</span>
+        <ul class="d-flex fd-col ul-links">
+          <a class="d-flex align-cent button-style" href="http://gwerh.developers.terminalkiller.site" target="_blank">
+            <img class="mr-1 mb-1" width="30" src="../../../assets/png/web-icon.png" alt="portoflio">
+            <span>Portafolio</span>
+          </a>
+          <a class="d-flex align-cent button-style" href="https://github.com/GwerhDev" target="_blank">
+            <img class="mr-1 mb-1" width="30" src="../../../assets/png/github-icon.png" alt="portoflio">
+            <span>GitHub</span>
+          </a>
+          <a class="d-flex align-cent button-style" href="https://www.linkedin.com/in/gwerhdev/" target="_blank">
+            <img class="mr-1 mb-1" width="30" src="../../../assets/png/linkedin-icon.png" alt="portoflio">
+            <span>LinkedIn</span>
+          </a>
+        </ul>
+
       </div>
     </section>
     <section class="section-test section-container">

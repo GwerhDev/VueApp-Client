@@ -24,6 +24,7 @@
       </ul>
       <div class="mt-5 pl-5 pr-5" v-else-if="filteredItems?.length === 0">
         <h2>{{ filterInfo }}</h2>
+        <img src="../../../assets/png/notfound-icon.png" alt="not found">
       </div>
       <div v-else>
         <h2>Cargando...</h2>

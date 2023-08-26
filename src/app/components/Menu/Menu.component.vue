@@ -20,22 +20,22 @@
 </script>
 
 <template>
-  <li class="mr-2">
+  <li class="mr-1 ml-1">
     <router-link class="menu-letters" @click="home()" to='/home'>
       Inicio
     </router-link>
   </li>
-  <li class="mr-2">
+  <li class="mr-1 ml-1">
     <a class="menu-letters" @click="closeMenu()" href='https://gwerhdev.github.io/VueApp-Client/' target="_blank">
       Documentación
     </a>
   </li>
-  <li class="mr-2">
+  <li class="mr-1 ml-1">
     <a class="menu-letters" @click="closeMenu()" href='https://github.com/GwerhDev/VueApp-Client' target="_blank">
       Repositorio
     </a>
   </li>
-  <li class="mr-2">
+  <li class="mr-1 ml-1">
     <router-link class="menu-letters" @click="about()" to='/about'>
       About
     </router-link>

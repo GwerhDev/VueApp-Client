@@ -280,3 +280,8 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(168deg, rgb(0, 0, 0) 20%, var(--primary-hover-color) 120%);
 }
+
+input[type="text"] {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
