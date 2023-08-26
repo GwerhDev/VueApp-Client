@@ -4,11 +4,14 @@
   justify-content: space-around;
   margin: .1rem;
   padding: 2rem;
-  height: 400px;
+  height: 350px;
   border-radius: 1rem;
   background-color: #363636;
   border: solid;
   border-width: 2px;
   border-color: var(--primary-color);
   width: 100%;
+  span {
+    height: 3rem;
+  }
 }

@@ -1,0 +1,23 @@
+.section-container {
+  padding: 3rem;
+}
+
+.section-me {
+  border-right: solid;
+  border-right-width: 1px;
+  border-right-color: var(--primary-color);
+  width: 30rem;
+  .profile-container {
+    padding-bottom: 1rem;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--primary-color);
+    img {
+      border: solid;
+      border-radius: 100%;
+      border-width: 2px;
+      border-color: var(--primary-color);
+      box-shadow: 0px 0px 10px var(--primary-color);    
+    }
+  }
+}

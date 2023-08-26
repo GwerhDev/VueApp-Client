@@ -1,6 +1,7 @@
 <style scoped lang="scss" src="./Card.component.scss"/>
 <script setup lang="ts">
   import { useRouter } from 'vue-router';
+import { capitalizeFirstLetter } from '../../../utils/capitalizeFirstLetter';
 
   const props = defineProps({
     item: {
@@ -18,8 +19,8 @@
 
 <template>
   <div class="card-container">
-    <img src="../../../assets/svg/logoipsum.svg" class="mt-2 mb-2" alt="iamge-placeholder">
-    <span>{{ props.item.title }}</span>
+    <img src="../../../assets/svg/logoipsum.svg" height="80" class="mt-2 mb-2" alt="iamge-placeholder">
+    <span>{{ capitalizeFirstLetter(props.item.title) }}</span>
     <button @click="redirectToDetails">Ver más detalles</button>
   </div>
 </template>

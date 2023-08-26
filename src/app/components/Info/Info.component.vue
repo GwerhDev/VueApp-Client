@@ -3,10 +3,11 @@
   import { useRouter } from 'vue-router';
   import { useStore } from '../../../middlewares/pinia/store';
   import { storeToRefs } from 'pinia';
+  import { capitalizeFirstLetter } from '../../../utils/capitalizeFirstLetter';
 
   const store: any = useStore();
   const router: any = useRouter();
-  const { details }: any = storeToRefs( store )
+  const { details }: any = storeToRefs( store );
 
   const { id } = router.currentRoute._value.params;
   store.loadItemById(id);
@@ -15,11 +16,11 @@
 <template>
   <main class="main-container-info">
     <div class="mb-4" v-if="details">
-      <h1>{{ details.title }}</h1>
+      <h1 v-if="details.title">{{ capitalizeFirstLetter(details.title) }}</h1>
       <div>
         <h2>Detalles</h2>
-        <span>
-          {{ details.body }}
+        <span v-if="details.body">
+          {{ capitalizeFirstLetter(details.body) }}
         </span>
       </div>
     </div>
