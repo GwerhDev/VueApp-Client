@@ -69,7 +69,11 @@ export const useStore = defineStore('store', {
         this.pagination.min = MIN;
         this.pagination.max = MAX;
         this.pagination.currentPage = 1;
-        this.filterInfo = 'ítems que contienen "' + search + '" en su título';
+        if(this.filteredItems.length === 0) {
+          this.filterInfo = 'No se han encontrado resultados para su búsqueda: "' + search + '"';
+        } else {
+          this.filterInfo = 'ítems que contienen "' + search + '" en su título';
+        }
       }
     }
   }
