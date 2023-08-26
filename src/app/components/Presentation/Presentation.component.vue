@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <img class="logo" src="../../assets/svg/logoipsum.svg" alt="">
+  <img class="logo" src="../../../assets/svg/logoipsum.svg" alt="">
   <h1>VueApp - FrontEnd</h1>
   <div class="mb-4">
     <span>Tecnologías:<i>VueJs, Pinia, Axios & TypeScript</i></span>
