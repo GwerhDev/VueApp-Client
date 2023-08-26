@@ -1,15 +1,11 @@
 <script setup lang="ts">
-  import EnterButton from '../components/Buttons/Enter/EnterButton.component.vue'
+  import EnterButton from '../components/Buttons/Enter/EnterButton.component.vue';
+  import Presentation from '../components/Presentation/Presentation.component.vue'
 </script>
 
 <template>
   <main class="main-container-landing">
-    <img class="logo" src="../../assets/svg/logoipsum.svg" alt="">
-    <h1>VueApp - FrontEnd</h1>
-    <div class="mb-4">
-      <span>Tecnologías: </span>
-      <i>VueJs, Pinia, Axios & TypeScript</i>
-    </div>
+    <Presentation/>
     <EnterButton/>
   </main>
 </template>
@@ -21,5 +17,4 @@
     flex-direction: column;
     justify-content: center;
   }
-
 </style>

@@ -27,11 +27,18 @@ import { upToTop } from '../../../utils/upToTop';
   <div class="nav-container">
     <main class="nav-menu">
       <ul class="nav-menu-ul">
-        <div class="burger-menu-container">
-          <img src="../../../assets/svg/icon-burger-menu.svg" @click="openMenu()" alt="">
-        </div>
-        <div class="close-menu-container">
-          <span @click="closeMenu()">X</span>
+        <div class="d-flex align-cent logo-container">
+          <div class="d-flex align-cent logo-cont fd-col">
+            <router-link class="d-flex just-cent align-cent" to='/'>
+              <img src="../../../assets/svg/logoipsum.svg" alt="">
+            </router-link>
+            <div class="close-menu-container">
+              <span @click="closeMenu()">X</span>
+            </div>
+          </div>          
+          <div class="burger-menu-container">
+              <img src="../../../assets/svg/icon-burger-menu.svg" @click="openMenu()" alt="">
+          </div>
         </div>
         <div class="menu-container">
           <Menu></Menu>
