@@ -28,3 +28,22 @@
   padding-right: 2rem;
   text-align: left;
 }
+
+@media (max-width: 1080px) {
+  .about-container{
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    .section-me {
+      width: 100%;
+      border: none;
+      .profile-container {
+        border: none;
+      }
+    }
+    .section-test {
+      border-top: solid;
+      border-top-color: var(--primary-color);
+    }
+  }
+}

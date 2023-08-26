@@ -2,7 +2,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main class="main-container">
+  <main class="main-container about-container">
     <section class="section-me section-container">
       <div class="profile-container">
         <img src="../../../assets/png/gwerhdev.png" width="150px" alt="profile picture">
