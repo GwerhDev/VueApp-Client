@@ -62,12 +62,14 @@ export const useStore = defineStore('store', {
         this.pagination.min = MIN;
         this.pagination.max = MAX;
         this.pagination.currentPage = 1;
+        this.filterInfo = 'todos';
       } else {
         this.filteredItems = this.items.filter((item: any) => item.title.toLowerCase().includes(search.toLowerCase()));
         this.pagination.totalPages = Math.ceil(this.filteredItems.length / ITEMS_PER_PAGE);
         this.pagination.min = MIN;
         this.pagination.max = MAX;
         this.pagination.currentPage = 1;
+        this.filterInfo = 'ítems que contienen "' + search + '" en su título';
       }
     }
   }

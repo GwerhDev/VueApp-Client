@@ -4,13 +4,13 @@
   import { useStore } from '../../../middlewares/pinia/store';
 
   const store: any = useStore();
-  const { filterInfo }: string = storeToRefs( store );
+  const { filterInfo, filteredItems }: any = storeToRefs( store );
 
   store.clearDetails();  
 </script>
 
 <template>
-  <section class="filter-info">
-    <span>Mostrando: {{ filterInfo }}</span>
+  <section class="filter-info mt-2">
+    <span>Mostrando: {{ filterInfo }} ({{ filteredItems?.length }} resultados)</span>
   </section>
 </template>
