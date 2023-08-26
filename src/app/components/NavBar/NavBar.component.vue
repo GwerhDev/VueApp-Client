@@ -24,6 +24,10 @@
     upToTop();
   }
 
+  function exit() {
+    store.loadAllItems();
+  }
+
 </script>
 
 <template>
@@ -31,7 +35,7 @@
     <main class="nav-menu-desk">
       <ul class="nav-menu-ul-desk">
         <div class="d-flex just-cent align-cent">
-          <router-link class="d-flex just-cent align-cent" to='/'>
+          <router-link class="d-flex just-cent align-cent" @click="exit()" to='/'>
             <img class="logo" src="../../../assets/svg/logoipsum.svg" alt="">
           </router-link>
         </div>

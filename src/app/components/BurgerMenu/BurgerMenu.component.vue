@@ -21,6 +21,10 @@ import { upToTop } from '../../../utils/upToTop';
     closeMenu();
   }
 
+  function exit() {
+    store.loadAllItems();
+  }
+
 </script>
 
 <template>
@@ -28,8 +32,8 @@ import { upToTop } from '../../../utils/upToTop';
     <main class="nav-menu">
       <ul class="nav-menu-ul">
         <div class="d-flex align-cent logo-container">
-          <div class="d-flex align-cent logo-cont fd-col">
-            <router-link class="d-flex just-cent align-cent" to='/'>
+          <div class="d-flex align-cent logo-cont">
+            <router-link class="d-flex align-cent logo-image-container" @click="exit()" to='/'>
               <img src="../../../assets/svg/logoipsum.svg" alt="">
             </router-link>
             <div class="close-menu-container">

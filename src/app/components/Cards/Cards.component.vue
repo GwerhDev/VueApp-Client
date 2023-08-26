@@ -17,7 +17,7 @@
         <Card :item="item"/>
       </li>
     </ul>
-    <div class="mt-100" v-else-if="filteredItems?.length === 0">
+    <div class="mt-5 pl-5 pr-5" v-else-if="filteredItems?.length === 0">
       <h2>No se han encontrado resultados para su búsqueda.</h2>
     </div>
     <div v-else>

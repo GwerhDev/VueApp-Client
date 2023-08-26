@@ -1,14 +1,17 @@
 
 .grid-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .grid-item {
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1080px) {

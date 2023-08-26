@@ -5,16 +5,9 @@
 
 <template>
   <main class="main-container-landing">
-    <Presentation/>
-    <EnterButton/>
+    <div class="container-landing">
+      <Presentation/>
+      <EnterButton/>
+    </div>
   </main>
 </template>
-
-<style scoped>
-  .main-container-landing {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-</style>
