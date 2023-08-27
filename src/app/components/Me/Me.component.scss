@@ -35,20 +35,27 @@
   height: 30px;
   border-radius: 100%;
 }
-
-.ul-links {
-  padding: 0;
-  a {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    span {
+.my-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .ul-links {
+    padding: 1rem;
+    max-width: 250px;
+    a {
+      padding-left: 4rem;
+      padding-right: 4rem;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      text-align: left;
-      width: 100%;
+      span {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+      }
     }
   }
 }

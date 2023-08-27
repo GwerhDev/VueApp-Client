@@ -1,6 +1,6 @@
 import {defineStore} from 'pinia';
 import { loadAllItemsService, loadItemByIdService } from '../services';
-import { ITEMS_PER_PAGE, MAX, MIN } from '../misc/const';
+import { ALL, ITEMS_PER_PAGE, MAX, MIN, SEARCH_NOT_FOUND } from '../misc/const';
 
 interface storeState {
   items: any,
@@ -42,7 +42,7 @@ export const useStore = defineStore('store', {
       this.pagination.min = MIN;
       this.pagination.max = MAX;
       this.pagination.currentPage = 1;
-      this.filterInfo = 'todos';
+      this.filterInfo = ALL;
     },
     async loadItemById(id: string) {
       this.details = await loadItemByIdService(id)
@@ -62,7 +62,7 @@ export const useStore = defineStore('store', {
         this.pagination.min = MIN;
         this.pagination.max = MAX;
         this.pagination.currentPage = 1;
-        this.filterInfo = 'todos';
+        this.filterInfo = ALL;
       } else {
         this.filteredItems = this.items.filter((item: any) => item.title.toLowerCase().includes(search.toLowerCase()));
         this.pagination.totalPages = Math.ceil(this.filteredItems.length / ITEMS_PER_PAGE);
@@ -70,9 +70,9 @@ export const useStore = defineStore('store', {
         this.pagination.max = MAX;
         this.pagination.currentPage = 1;
         if(this.filteredItems.length === 0) {
-          this.filterInfo = 'No se han encontrado resultados para su búsqueda: "' + search + '"';
+          this.filterInfo = SEARCH_NOT_FOUND + ' "' + search + '"';
         } else {
-          this.filterInfo = 'ítems que contienen "' + search + '" en su título';
+          this.filterInfo = 'Ítems que contienen "' + search + '" en su título';
         }
       }
     }
