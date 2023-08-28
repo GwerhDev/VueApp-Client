@@ -22,7 +22,7 @@ npm run dev
 
 ## Uso
 - En la Landing Page, clickear en el botón "Entrar" para visualizar los artículos.
-- Al entrar, se visualizarán los 10 artículos por página provenientes de la API externa.
+- Al entrar, se visualizarán 10 artículos por página provenientes de la API externa.
 - Puedes filtrar elementos utilizando el buscador.
 - Puedes navegar entre páginas mediante la funcionalidad de "paginación".
 
