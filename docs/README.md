@@ -35,4 +35,4 @@ npm run test
 
 ## Tecnologías
 
-VueJs, Pinia, Axios, Vite, Vitest && TypeScript
+[VueJs](https://vuejs.org/), [Pinia](https://pinia.vuejs.org/), [Axios](https://axios-http.com/), [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/) && [TypeScript](https://www.typescriptlang.org/)
