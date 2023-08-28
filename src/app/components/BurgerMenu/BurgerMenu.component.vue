@@ -55,4 +55,3 @@ import { upToTop } from '../../../utils/upToTop';
     </main>
   </div>
 </template>
-../../../middlewares/store

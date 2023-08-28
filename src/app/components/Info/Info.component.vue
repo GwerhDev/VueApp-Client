@@ -19,7 +19,7 @@
       <h2>{{ details.error }}</h2>
       <img src="../../../assets/png/notfound-icon.png" alt="">
     </div>
-    <div class="mb-4" v-else-if="details">
+    <div class="mb-4 pl-3 pr-3" v-else-if="details">
       <h1 v-if="details.title">{{ capitalizeFirstLetter(details.title) }}</h1>
       <div>
         <h2>Detalles</h2>

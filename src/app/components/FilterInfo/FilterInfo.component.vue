@@ -10,8 +10,7 @@
 </script>
 
 <template>
-  <section class="filter-info mt-2">
+  <section class="filter-info mt-2 pr-1">
     <span>Mostrando: {{ filterInfo }} ({{ filteredItems?.length }} resultados)</span>
   </section>
 </template>
-../../../middlewares/store

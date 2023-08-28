@@ -41,4 +41,3 @@
     </router-link>
   </li>
 </template>
-../../../middlewares/store

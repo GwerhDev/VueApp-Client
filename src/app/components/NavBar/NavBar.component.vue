@@ -51,4 +51,3 @@
   </div>
   <BurgerMenu/>
 </template>
-../../../middlewares/store
