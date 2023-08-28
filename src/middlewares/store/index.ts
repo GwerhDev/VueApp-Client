@@ -45,7 +45,9 @@ export const useStore = defineStore('store', {
       this.filterInfo = ALL;
     },
     async loadItemById(id: string) {
-      this.details = await loadItemByIdService(id)
+      let response = await loadItemByIdService(id);
+      if(response.error) return this.details = { error: response.error };
+      this.details = response;
     },
     setPage(page: number) {
       this.pagination.min = (page - 1) * ITEMS_PER_PAGE;

@@ -15,7 +15,11 @@
 
 <template>
   <main class="main-container-info">
-    <div class="mb-4" v-if="details">
+    <div class="mb-4" v-if="details.error">
+      <h2>{{ details.error }}</h2>
+      <img src="../../../assets/png/notfound-icon.png" alt="">
+    </div>
+    <div class="mb-4" v-else-if="details">
       <h1 v-if="details.title">{{ capitalizeFirstLetter(details.title) }}</h1>
       <div>
         <h2>Detalles</h2>
@@ -28,4 +32,4 @@
       <h2>Cargando...</h2>
     </div>
   </main>
-</template>../../../middlewares/store
+</template>
