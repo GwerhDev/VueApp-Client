@@ -40,7 +40,7 @@
           </router-link>
         </div>
         <div class="menu-container-desk">
-          <Menu/>
+          <Menu></Menu>
         </div>
         <div class="searcher-container-desk">
           <input type="text" @input="(e) => handleInput(e)">
