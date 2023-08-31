@@ -17,7 +17,7 @@
       <div v-if="filteredItems?.length > 1" class="d-flex fd-col align-cent inner-container">
         <FilterInfo/>
       </div>
-      <ul class="grid-container" v-if="filteredItems?.length > 1">
+      <ul class="grid-container" v-if="filteredItems?.length >= 1">
         <li v-for="item in filteredItems.slice(pagination.min, pagination.max)" :key="item.id" class="grid-item">
           <Card :item="item"/>
         </li>

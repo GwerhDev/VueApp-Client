@@ -6,7 +6,7 @@
   const store: any = useStore();
   const { filterInfo, filteredItems }: any = storeToRefs( store );
 
-  store.clearDetails();  
+  store.clearDetails();
 </script>
 
 <template>
