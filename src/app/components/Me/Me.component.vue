@@ -13,7 +13,7 @@
       <div class="mt-1 my-links-container">
         <span>Mis enlaces:</span>
         <ul class="d-flex fd-col ul-links">
-          <a class="d-flex button-style" href="http://gwerh.developers.terminalkiller.site" target="_blank">
+          <a class="d-flex button-style" href="http://gwerh.netlify.app" target="_blank">
             <div class="icon-container-link">
               <img height="30" width="30" src="../../../assets/png/web-icon.png" alt="portoflio">
             </div>
